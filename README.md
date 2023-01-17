@@ -12,6 +12,9 @@ Now that you have the ACCESS_TOKEN use it as indicated here.
 ```
 make ACCESS_TOKEN=<your-access-token>
 ```
+## Notes
+
+In notes directory one can find more information about how much xp per hour projects give and as such what projects give the most xp. Also projects indicated as potential requirements that I did not found in 19's cursus.
 
 ## Warnings
 In script mac's homebrew is used to install the dependencies.
