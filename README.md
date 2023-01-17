@@ -17,5 +17,3 @@ make ACCESS_TOKEN=<your-access-token>
 In script mac's homebrew is used to install the dependencies.
 
 Errors may be present or changes in requirements could happen in the future. Please let me know if a fix is necessary.
-
-If 'jq' creates error messages and makes the application bug, simply stop and relaunch the application.
