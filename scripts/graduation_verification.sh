@@ -403,7 +403,7 @@ if [ $master_ai_validated -eq "1" ]; then
 else
 	printf "    * \e[31m Option 2: Database architecture and data \xE2\x9D\x8C \e[0m \n"
 fi
-printf "\e[36mEligible for bachelor: 'IT Solutions Designer and Developer' \e[0m"
+printf "\e[36mEligible for master: 'Expert in IT Architecture' \e[0m"
 if [ $bachelor_validated -eq "1" ] && [ $master_option_validated -eq "1" ]; then
 	printf "=>\e[32mVALIDATED\e[0m (if you are level 21 and have attended 15 events) \n"
 else
