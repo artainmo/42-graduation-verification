@@ -1,11 +1,12 @@
 ACCESS_CODE=$1
+LOGIN=$2
 
 if [ $# -ne 1 ]; then
     echo "MISSING ACCESS_TOKEN ARGUMENT"
     exit
 fi
 
-COMMON_CORE_FINISHED=$(curl -sH "Authorization: Bearer $ACCESS_CODE" "https://api.intra.42.fr/v2/users/artainmo/projects_users" | jq '.[] | select(.project.name=="ft_transcendence")."validated?"' 2>/dev/null)
+COMMON_CORE_FINISHED=$(curl -sH "Authorization: Bearer $ACCESS_CODE" "https://api.intra.42.fr/v2/users/$LOGIN/projects_users" | jq '.[] | select(.project.name=="ft_transcendence")."validated?"' 2>/dev/null)
 
 if [ $? -ne 0 ]; then
 	echo "API call failed, maybe the access code is wrong or outdated."
