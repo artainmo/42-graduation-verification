@@ -10,7 +10,7 @@ make setup
 
 Now that you have the ACCESS_TOKEN use it as indicated here.
 ```
-make ACCESS_TOKEN=<your-access-token>
+make ACCESS_TOKEN=<your-access-token> LOGIN=<your-login>
 ```
 ## Notes
 
