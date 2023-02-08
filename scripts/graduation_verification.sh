@@ -1,8 +1,8 @@
 ACCESS_CODE=$1
 LOGIN=$2
 
-if [ $# -ne 1 ]; then
-    echo "MISSING ACCESS_TOKEN ARGUMENT"
+if [ $# -ne 2 ]; then
+    echo "MISSING ARGUMENTS"
     exit
 fi
 
