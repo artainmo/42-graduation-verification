@@ -1,5 +1,5 @@
 all:
-	@./scripts/graduation_verification.sh $(ACCESS_TOKEN)
+	@./scripts/graduation_verification.sh $(ACCESS_TOKEN) $(LOGIN)
 
 setup:
 	@chmod +x ./scripts/setup.sh
