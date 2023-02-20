@@ -410,3 +410,4 @@ if [ $bachelor_validated -eq "1" ] && [ $master_option_validated -eq "1" ]; then
 else
 	printf "=> \e[31mFAILED\e[0m\n"
 fi
+printf "If you do not know how to see your attended events. In this mobile app (https://github.com/artainmo/swifty-companion) a listing of attended events is displayed."
