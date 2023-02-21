@@ -17,6 +17,6 @@ make ACCESS_TOKEN=<your-access-token> LOGIN=<your-login>
 In notes directory one can find more information about how much xp per hour projects give and as such what projects give the most xp. Also projects indicated as potential requirements that I did not found in 19's cursus.
 
 ## Warnings
-In script mac's homebrew is used to install the dependencies.
+In script mac's homebrew is used to install the dependencies. Thus this app was made for mac.
 
-Errors may be present or changes in requirements could happen in the future. Please let me know if a fix is necessary.
+Errors may be present or changes in requirements could happen in the future.
