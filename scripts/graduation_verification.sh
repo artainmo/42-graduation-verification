@@ -14,8 +14,11 @@ if [ $? -ne 0 ]; then
 fi
 
 if [ -z $COMMON_CORE_FINISHED ] || [ $COMMON_CORE_FINISHED != 'true' ]; then
-	echo "You have not even validated the common core yet."
-	exit
+	echo "You have not even validated the common core yet?"
+  read -p 'Do you still want to continue? (y/n): ' input
+  if [ $input != 'y' ]; then
+  	exit 0
+  fi
 fi
 
 check_category () {
@@ -29,7 +32,7 @@ check_category () {
 	printf "\e[33m\e[4m$TITLE\n\e[0m"
 	for ((i = 0; i < ${#PROJECTS[@]}; i+=2)); do
     while true; do
-		    PROJECT_FINISHED=$(curl -sH "Authorization: Bearer $ACCESS_CODE" "https://api.intra.42.fr/v2/users/artainmo/projects_users" | jq --arg PROJECT "${PROJECTS[$i]}" '.[] | select(.project.name==$PROJECT)."validated?"' 2>/dev/null)
+		    PROJECT_FINISHED=$(curl -sH "Authorization: Bearer $ACCESS_CODE" "https://api.intra.42.fr/v2/users/$LOGIN/projects_users" | jq --arg PROJECT "${PROJECTS[$i]}" '.[] | select(.project.name==$PROJECT)."validated?"' 2>/dev/null)
         if [ $? -eq 0 ]; then
           break
         fi
@@ -41,7 +44,7 @@ check_category () {
 			printf " * \e[31m ${PROJECTS[$i]} - 0/${PROJECT_XP}xp \xE2\x9D\x8C  \e[0m \n"
 		else
       while true; do
-  		    PROJECT_MARK=$(curl -sH "Authorization: Bearer $ACCESS_CODE" "https://api.intra.42.fr/v2/users/artainmo/projects_users" | jq --arg PROJECT "${PROJECTS[$i]}" '.[] | select(.project.name==$PROJECT)."final_mark"' 2>/dev/null)
+  		    PROJECT_MARK=$(curl -sH "Authorization: Bearer $ACCESS_CODE" "https://api.intra.42.fr/v2/users/$LOGIN/projects_users" | jq --arg PROJECT "${PROJECTS[$i]}" '.[] | select(.project.name==$PROJECT)."final_mark"' 2>/dev/null)
           if [ $? -eq 0 ]; then
             break
           fi
