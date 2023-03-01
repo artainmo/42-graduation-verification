@@ -1,5 +1,5 @@
 # 42-graduation-verification
-A program that automatically verifies and displays to what extent a 42 network student validates the requirements for [the bachelor and master](https://meta.intra.42.fr/articles/19-requirements)
+A program that automatically verifies and displays to what extent a 42 network student validates the requirements for [the bachelor and master](https://meta.intra.42.fr/articles/19-requirements).
 
 ## Use
 
