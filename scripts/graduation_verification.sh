@@ -129,7 +129,7 @@ bachelor_mobile_validated=$?
 
 printf "\e[36mWeb and mobile application development \e[0m"
 if [ $bachelor_web_validated -eq "1" ] && [ $bachelor_mobile_validated -eq "1" ]; then
-	printf "=>\e[32mVALIDATED\e[0m\n"
+	printf "=> \e[32mVALIDATED\e[0m\n"
 	bachelor_web_mobile_validated=1
 else
 	printf "=> \e[31mFAILED\e[0m\n"
@@ -209,7 +209,7 @@ bachelor_ip_validated=$?
 
 printf "\e[36mApplicative software development \e[0m"
 if [ $bachelor_oop_validated -eq "1" ] && [ $bachelor_fp_validated -eq "1" ] && [ $bachelor_ip_validated -eq "1" ]; then
-	printf "=>\e[32mVALIDATED\e[0m\n"
+	printf "=> \e[32mVALIDATED\e[0m\n"
 	bachelor_asd_validated=1
 else
 	printf "=> \e[31mFAILED\e[0m\n"
@@ -233,7 +233,7 @@ bachelor_suite_validated=$?
 
 printf "\e[36mSuite \e[0m"
 if [ $bachelor_suite_validated -eq "1" ]; then
-	printf "=>\e[32mVALIDATED\e[0m\n"
+	printf "=> \e[32mVALIDATED\e[0m\n"
 else
 	printf "=> \e[31mFAILED\e[0m\n"
 fi
@@ -268,7 +268,7 @@ else
 fi
 printf "\e[36mEligible for bachelor: 'IT Solutions Designer and Developer' \e[0m"
 if [ $bachelor_internships_validated -eq "1" ] && [ $bachelor_option_validated -eq "1" ] && [ $bachelor_suite_validated -eq "1" ]; then
-	printf "=>\e[32mVALIDATED\e[0m (if you are level 17 and have attended 10 events) \n"
+	printf "=> \e[32mVALIDATED\e[0m (if you are level 17 and have attended 10 events) \n"
   bachelor_validated=1
 else
 	printf "=> \e[31mFAILED\e[0m\n"
@@ -337,7 +337,7 @@ master_security_validated=$?
 
 printf "\e[36mNetwork Information Systems Architecture \e[0m"
 if [ $master_uk_validated -eq "1" ] && [ $master_sa_validated -eq "1" ] && [ $master_security_validated -eq "1" ]; then
-	printf "=>\e[32mVALIDATED\e[0m\n"
+	printf "=> \e[32mVALIDATED\e[0m\n"
 	master_nisa_validated=1
 else
 	printf "=> \e[31mFAILED\e[0m\n"
@@ -377,7 +377,7 @@ master_ai_validated=$?
 
 printf "\e[36mDatabase architecture and data \e[0m"
 if [ $master_web_validated -eq "1" ] && [ $master_ai_validated -eq "1" ]; then
-	printf "=>\e[32mVALIDATED\e[0m\n"
+	printf "=> \e[32mVALIDATED\e[0m\n"
 	master_data_validated=1
 else
 	printf "=> \e[31mFAILED\e[0m\n"
@@ -409,7 +409,7 @@ else
 fi
 printf "\e[36mEligible for master: 'Expert in IT Architecture' \e[0m"
 if [ $bachelor_validated -eq "1" ] && [ $master_option_validated -eq "1" ]; then
-	printf "=>\e[32mVALIDATED\e[0m (if you are level 21 and have attended 15 events) \n"
+	printf "=> \e[32mVALIDATED\e[0m (if you are level 21 and have attended 15 events) \n"
 else
 	printf "=> \e[31mFAILED\e[0m\n"
 fi
