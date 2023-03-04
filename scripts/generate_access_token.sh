@@ -30,3 +30,8 @@ else
 	echo "API app access SUCCESS"
 	echo "ACCESS_TOKEN: $ACCESS_TOKEN"
 fi
+
+clear
+read -p 'Login: ' LOGIN
+
+./scripts/graduation_verification.sh $ACCESS_TOKEN $LOGIN
