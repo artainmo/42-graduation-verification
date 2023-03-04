@@ -10,7 +10,7 @@ Compatible with **macOS**. When using macOS it expects **brew** to be available 
 Could also be compatible with **Linux** and **Windows** as I adapted the code for those. However I was never able to test it on those OSs.
 
 ## Notes
-In notes directory one can find more information about how much xp per hour projects give and as such what projects give the most xp. Also projects indicated as potential requirements that I did not found in 19's cursus.
+In 'notes' directory one can find more information about how much xp per hour projects give and as such what projects give the most xp. Also projects indicated as potential requirements that I did not found in 19's cursus.
 
 ## Warnings
 Changes in requirements could happen in the future.
