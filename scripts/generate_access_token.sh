@@ -1,6 +1,12 @@
 read -p 'Do you already have a 42 API for us to use? (y/n): ' input
 if [ $input = 'y' ]; then
-	open 'https://profile.intra.42.fr/oauth/applications'
+	if [ "$(uname)" = "Darwin" ]; then
+		open 'https://profile.intra.42.fr/oauth/applications'
+	elif [ "$(uname)" = "Linux" ]; then
+		xdg-open 'https://profile.intra.42.fr/oauth/applications'
+	else
+		start 'https://profile.intra.42.fr/oauth/applications'
+	fi
 	sleep 5
 else
 	printf " We will redirect you to create an API app for us to access your information safely.\n"
@@ -12,7 +18,13 @@ else
   		sleep 1
 	done
 	printf '\n'
-	open "https://profile.intra.42.fr/oauth/applications/new"
+	if [ "$(uname)" = "Darwin" ]; then
+		open 'https://profile.intra.42.fr/oauth/applications'
+	elif [ "$(uname)" = "Linux" ]; then
+		xdg-open 'https://profile.intra.42.fr/oauth/applications'
+	else
+		start 'https://profile.intra.42.fr/oauth/applications'
+	fi
 	sleep 20
 fi
 
