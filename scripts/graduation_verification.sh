@@ -87,8 +87,8 @@ TITLE='Internships'
 MINIMUM_XP=0
 MINIMUM_VALIDATED_PROJECTS=2
 PROJECTS=('Startup Internship - Tutor Final Evaluation' 42000
-'internship I - Company Final Evaluation' 63000
-'internship II - Company Final Evaluation' 42000
+'internship I - Company Final Evaluation' 42000
+'internship II - Company Final Evaluation' 63000
 'Part_Time I Company Final Evaluation' 42000
 'Part_Time II - Company Final Evaluation' 63000)
 check_category "$TITLE" "$MINIMUM_XP" "$MINIMUM_VALIDATED_PROJECTS" "${PROJECTS[@]}"
